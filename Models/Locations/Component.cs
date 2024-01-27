@@ -10,9 +10,6 @@ public class Component
     [JsonProperty("city")]
     public string City { get; set; }
 
-    [JsonProperty("continent")]
-    public string Continent { get; set; }
-
     [JsonProperty("country")]
     public string Country { get; set; }
 

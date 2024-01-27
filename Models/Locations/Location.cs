@@ -5,7 +5,7 @@ namespace FoodWasteReductionAppForRestaurants.Models.Locations;
 public class Location
 {
     [JsonProperty("components")]
-    public List<Component> Components { get; set; }
+    public Component Components { get; set; }
 
     [JsonProperty("confidence")]
     public int Confidence { get; set; }
