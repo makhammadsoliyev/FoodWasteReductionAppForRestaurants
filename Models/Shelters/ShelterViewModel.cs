@@ -7,4 +7,6 @@ public class ShelterViewModel
     public string Description { get; set; }
     public string Address { get; set; }
     public int NumberOfPeople { get; set; }
+    public string Latitude { get; set; }
+    public string Longitude { get; set; }
 }

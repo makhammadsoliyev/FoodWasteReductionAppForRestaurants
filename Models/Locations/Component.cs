@@ -20,7 +20,7 @@ public class Component
     public string County { get; set; }
 
     [JsonProperty("house_number")]
-    public int HouseNumber { get; set; }
+    public string HouseNumber { get; set; }
 
     [JsonProperty("neighbourhood")]
     public string Neighborhood { get; set; }

@@ -1,97 +1,20 @@
 [
   {
-    "components": {
-      "building": null,
-      "city": "Mountain View",
-      "country": "United States",
-      "country_code": "us",
-      "county": "Santa Clara County",
-      "house_number": 1600,
-      "neighbourhood": null,
-      "postcode": "94043",
-      "road": "Amphitheatre Parkway"
-    },
-    "confidence": 10,
-    "formatted": "Google Headquarters, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
-    "geometry": {
-      "lat": "37.4217636",
-      "lng": "-122.084614"
-    }
+    "Name": "None",
+    "Description": "asssssssss",
+    "Id": 1,
+    "CreatedAt": "2024-01-27T21:01:10.9844894Z",
+    "UpdatedAt": "2024-01-27T21:01:28.5868204Z",
+    "DelatedAt": "2024-01-27T21:03:23.1334867Z",
+    "IsDeleted": true
   },
   {
-    "components": {
-      "building": "Google Building 41",
-      "city": "Mountain View",
-      "country": "United States",
-      "country_code": "us",
-      "county": "Santa Clara County",
-      "house_number": 1600,
-      "neighbourhood": null,
-      "postcode": "94043",
-      "road": "Amphitheatre Parkway"
-    },
-    "confidence": 10,
-    "formatted": "Google Building 41, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
-    "geometry": {
-      "lat": "37.4224857",
-      "lng": "-122.0855846"
-    }
-  },
-  {
-    "components": {
-      "building": null,
-      "city": "Mountain View",
-      "country": "United States",
-      "country_code": "us",
-      "county": "Santa Clara County",
-      "house_number": 1600,
-      "neighbourhood": null,
-      "postcode": "94043",
-      "road": "Amphitheatre Parkway"
-    },
-    "confidence": 10,
-    "formatted": "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
-    "geometry": {
-      "lat": "37.4231515",
-      "lng": "-122.0835082"
-    }
-  },
-  {
-    "components": {
-      "building": null,
-      "city": null,
-      "country": "United States of America",
-      "country_code": "us",
-      "county": null,
-      "house_number": 0,
-      "neighbourhood": null,
-      "postcode": null,
-      "road": "Amphitheatre Pkwy"
-    },
-    "confidence": 8,
-    "formatted": "Amphitheatre Pkwy, Mountain View, CA, United States of America",
-    "geometry": {
-      "lat": "37.423471",
-      "lng": "-122.086546"
-    }
-  },
-  {
-    "components": {
-      "building": null,
-      "city": null,
-      "country": "United States of America",
-      "country_code": "us",
-      "county": "Santa Clara County",
-      "house_number": 0,
-      "neighbourhood": null,
-      "postcode": null,
-      "road": null
-    },
-    "confidence": 6,
-    "formatted": "Mountain View, California, United States of America",
-    "geometry": {
-      "lat": "37.38605",
-      "lng": "-122.08385"
-    }
+    "Name": "as",
+    "Description": "as",
+    "Id": 2,
+    "CreatedAt": "2024-01-27T21:02:40.584817Z",
+    "UpdatedAt": "2024-01-27T21:03:14.7185704Z",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
   }
 ]

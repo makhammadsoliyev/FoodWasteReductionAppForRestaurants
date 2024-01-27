@@ -3,6 +3,9 @@ using FoodWasteReductionAppForRestaurants.Extensions;
 using FoodWasteReductionAppForRestaurants.Helpers;
 using FoodWasteReductionAppForRestaurants.Interfaces;
 using FoodWasteReductionAppForRestaurants.Models.Donations;
+using FoodWasteReductionAppForRestaurants.Models.Foods;
+using FoodWasteReductionAppForRestaurants.Models.Restaurants;
+using FoodWasteReductionAppForRestaurants.Models.Shelters;
 
 namespace FoodWasteReductionAppForRestaurants.Services;
 
@@ -90,4 +93,7 @@ public class DonationService : IDonationService
 
         return donation.ToMapView(food, shelter, restaurant);
     }
+
+    public async Task<(IEnumerable<FoodViewModel>, IEnumerable<ShelterViewModel>, IEnumerable<RestaurantViewModel>)> GetAllModels()
+        => (await foodService.GetAllAsync(), await shelterService.GetAllAsync(), await restaurantService.GetAllAsync());
 }

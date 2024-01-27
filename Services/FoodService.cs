@@ -23,7 +23,7 @@ public class FoodService : IFoodService
         return food.ToMapView();
     }
 
-    public async Task<bool> DelateAsync(long id)
+    public async Task<bool> DeleteAsync(long id)
     {
         foods = await FileIO.ReadAsync<Food>(Constants.FOODS_PATH);
         var food = foods.FirstOrDefault(f => f.Id == id && !f.IsDeleted)
@@ -60,6 +60,7 @@ public class FoodService : IFoodService
         var food = foods.FirstOrDefault(f => f.Id == id && !f.IsDeleted)
             ?? throw new Exception($"Food was not found with this id={id}");
 
+        food.Name = model.Name;
         food.UpdatedAt = DateTime.UtcNow;
         food.Description = model.Description;
 

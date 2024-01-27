@@ -37,6 +37,8 @@ public static class MapperExtension
             Id = model.Id,
             Name = model.Name,
             Address = model.Location.Formatted,
+            Latitude = model.Location.Geometry.Latitude,
+            Longitude = model.Location.Geometry.Longitude,
         };
     }
     #endregion
@@ -76,6 +78,8 @@ public static class MapperExtension
             Description = model.Description,
             Address = model.Location.Formatted,
             NumberOfPeople = model.NumberOfPeople,
+            Latitude = model.Location.Geometry.Latitude,
+            Longitude = model.Location.Geometry.Longitude,
         };
     }
     #endregion

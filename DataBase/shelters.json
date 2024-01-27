@@ -1,58 +1,58 @@
 [
   {
-    "Name": "1600 Amphitheatre Parkway, Mountain View, CA",
-    "Description": "asssssasssssssssssssssss",
+    "Name": "asa",
+    "Description": "as",
     "Location": {
       "components": {
         "building": null,
-        "city": "Mountain View",
-        "country": "United States",
-        "country_code": "us",
-        "county": "Santa Clara County",
-        "house_number": 1600,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": null,
+        "house_number": null,
         "neighbourhood": null,
-        "postcode": "94043",
-        "road": "Amphitheatre Parkway"
+        "postcode": "100000",
+        "road": null
       },
-      "confidence": 10,
-      "formatted": "Google Headquarters, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
+      "confidence": 4,
+      "formatted": "Tashkent, Uzbekistan",
       "geometry": {
-        "lat": "37.4217636",
-        "lng": "-122.084614"
+        "lat": "41.3123363",
+        "lng": "69.2787079"
       }
     },
-    "NumberOfPeople": 121111121,
+    "NumberOfPeople": 12,
     "Id": 1,
-    "CreatedAt": "2024-01-27T11:38:48.9227509Z",
-    "UpdatedAt": "2024-01-27T11:42:19.8652062Z",
-    "DelatedAt": "2024-01-27T11:42:51.4002287Z",
+    "CreatedAt": "2024-01-27T21:43:29.6768224Z",
+    "UpdatedAt": "2024-01-27T22:04:38.0564613Z",
+    "DelatedAt": "2024-01-27T22:10:39.0598408Z",
     "IsDeleted": true
   },
   {
-    "Name": "1600 Amphitheatre Parkway, Mountain View, CA",
-    "Description": "asas",
+    "Name": "TUIT",
+    "Description": "TATU",
     "Location": {
       "components": {
-        "building": null,
-        "city": "Mountain View",
-        "country": "United States",
-        "country_code": "us",
-        "county": "Santa Clara County",
-        "house_number": 1600,
-        "neighbourhood": null,
-        "postcode": "94043",
-        "road": "Amphitheatre Parkway"
+        "building": "Tashkent University of Information Technologies named after Al-Khorezmi",
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Yunusabad district",
+        "house_number": "108",
+        "neighbourhood": "Minor mahallasi",
+        "postcode": "100084",
+        "road": "Amir Timur avenue"
       },
       "confidence": 10,
-      "formatted": "Google Headquarters, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
+      "formatted": "Tashkent University of Information Technologies named after Al-Khorezmi, Amir Timur avenue 108, Tashkent, Uzbekistan, 100084",
       "geometry": {
-        "lat": "37.4217636",
-        "lng": "-122.084614"
+        "lat": "41.3409963",
+        "lng": "69.2868343"
       }
     },
-    "NumberOfPeople": 1221,
+    "NumberOfPeople": 7000,
     "Id": 2,
-    "CreatedAt": "2024-01-27T11:40:43.6393585Z",
+    "CreatedAt": "2024-01-27T22:11:21.9732589Z",
     "UpdatedAt": "0001-01-01T00:00:00",
     "DelatedAt": "0001-01-01T00:00:00",
     "IsDeleted": false
