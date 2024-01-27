@@ -1,4 +1,7 @@
-﻿using FoodWasteReductionAppForRestaurants.Models.Locations;
+﻿using FoodWasteReductionAppForRestaurants.Interfaces;
+using FoodWasteReductionAppForRestaurants.Models.Locations;
+using FoodWasteReductionAppForRestaurants.Models.Shelters;
+using FoodWasteReductionAppForRestaurants.Services;
 using Newtonsoft.Json;
 
 
@@ -15,6 +18,9 @@ var content = await response.Content.ReadAsStringAsync();
 var page = JsonConvert.DeserializeObject<Page>(content);
 var locations = page.Locations;
 
-var result = JsonConvert.SerializeObject(locations, Formatting.Indented);
-await File.WriteAllTextAsync(@"C:\Users\User\Desktop\dotnet\FoodWasteReductionAppForRestaurants\DataBase\foods.json", result);
+ShelterService service = new ShelterService();
+
+var s = await service.GetByIdAsync(2);
+
+Console.WriteLine();
 

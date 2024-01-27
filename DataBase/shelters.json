@@ -1,0 +1,60 @@
+[
+  {
+    "Name": "1600 Amphitheatre Parkway, Mountain View, CA",
+    "Description": "asssssasssssssssssssssss",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Mountain View",
+        "country": "United States",
+        "country_code": "us",
+        "county": "Santa Clara County",
+        "house_number": 1600,
+        "neighbourhood": null,
+        "postcode": "94043",
+        "road": "Amphitheatre Parkway"
+      },
+      "confidence": 10,
+      "formatted": "Google Headquarters, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
+      "geometry": {
+        "lat": "37.4217636",
+        "lng": "-122.084614"
+      }
+    },
+    "NumberOfPeople": 121111121,
+    "Id": 1,
+    "CreatedAt": "2024-01-27T11:38:48.9227509Z",
+    "UpdatedAt": "2024-01-27T11:42:19.8652062Z",
+    "DelatedAt": "2024-01-27T11:42:51.4002287Z",
+    "IsDeleted": true
+  },
+  {
+    "Name": "1600 Amphitheatre Parkway, Mountain View, CA",
+    "Description": "asas",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Mountain View",
+        "country": "United States",
+        "country_code": "us",
+        "county": "Santa Clara County",
+        "house_number": 1600,
+        "neighbourhood": null,
+        "postcode": "94043",
+        "road": "Amphitheatre Parkway"
+      },
+      "confidence": 10,
+      "formatted": "Google Headquarters, 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States of America",
+      "geometry": {
+        "lat": "37.4217636",
+        "lng": "-122.084614"
+      }
+    },
+    "NumberOfPeople": 1221,
+    "Id": 2,
+    "CreatedAt": "2024-01-27T11:40:43.6393585Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  }
+]

@@ -1,4 +1,5 @@
-﻿using FoodWasteReductionAppForRestaurants.Models.Donations;
+﻿using FoodWasteReductionAppForRestaurants.Interfaces;
+using FoodWasteReductionAppForRestaurants.Models.Donations;
 using FoodWasteReductionAppForRestaurants.Models.Foods;
 using FoodWasteReductionAppForRestaurants.Models.Restaurants;
 using FoodWasteReductionAppForRestaurants.Models.Shelters;
@@ -8,6 +9,9 @@ namespace FoodWasteReductionAppForRestaurants.Extensions;
 public static class MapperExtension
 {
     #region Restaurant mappers
+    public static List<RestaurantViewModel> ToMap(this List<Restaurant> models)
+        => models.Select(m => m.ToMapView()).ToList();
+
     public static Restaurant ToMapMain(this RestaurantCreationModel model)
     {
         return new Restaurant()
@@ -38,12 +42,17 @@ public static class MapperExtension
     #endregion
 
     #region Shelter mappers
+    public static List<ShelterViewModel> ToMap(this List<Shelter> models)
+        => models.Select(m => m.ToMapView()).ToList();
+
     public static Shelter ToMapMain(this ShelterCreationModel model)
     {
         return new Shelter()
         {
             Name = model.Name,
             Location = model.Location,
+            Description = model.Description, 
+            NumberOfPeople = model.NumberOfPeople,
         };
     }
 
@@ -53,6 +62,8 @@ public static class MapperExtension
         {
             Name = model.Name,
             Location = model.Location,
+            Description = model.Description,
+            NumberOfPeople = model.NumberOfPeople,
         };
     }
 
@@ -62,18 +73,22 @@ public static class MapperExtension
         {
             Id = model.Id,
             Name = model.Name,
+            Description = model.Description,
             Address = model.Location.Formatted,
+            NumberOfPeople = model.NumberOfPeople,
         };
     }
     #endregion
 
     #region Food mappers
+    public static List<FoodViewModel> ToMap(this List<Food> models)
+        => models.Select(m => m.ToMapView()).ToList();
+
     public static Food ToMapMain(this FoodCreationModel model)
     {
         return new Food()
         {
             Name = model.Name,
-            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
@@ -83,7 +98,6 @@ public static class MapperExtension
         return new Food()
         {
             Name = model.Name,
-            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
@@ -94,13 +108,22 @@ public static class MapperExtension
         {
             Id = model.Id,
             Name = model.Name,
-            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
     #endregion
 
     #region Donation mappers
+    public static List<DonationViewModel> ToMap(
+        this List<Donation> models, 
+        IFoodService foodService, 
+        IShelterService shelterService, 
+        IRestaurantService restaurantService)
+        => (List<DonationViewModel>)models.Select(async m => m.ToMapView(
+            await foodService.GetByIdAsync(m.FoodId), 
+            await shelterService.GetByIdAsync(m.ShelterId), 
+            await restaurantService.GetByIdAsync(m.RestaurantId)));
+
     public static Donation ToMapMain(this DonationCreationModel model)
     {
         return new Donation()
