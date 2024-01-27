@@ -1,6 +1,4 @@
-﻿using FoodWasteReductionAppForRestaurants.Interfaces;
-using FoodWasteReductionAppForRestaurants.Models.Locations;
-using FoodWasteReductionAppForRestaurants.Models.Shelters;
+﻿using FoodWasteReductionAppForRestaurants.Models.Locations;
 using FoodWasteReductionAppForRestaurants.Services;
 using Newtonsoft.Json;
 

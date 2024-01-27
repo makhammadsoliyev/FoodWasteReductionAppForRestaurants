@@ -1,6 +1,4 @@
-﻿using FoodWasteReductionAppForRestaurants.Models.Restaurants;
-
-namespace FoodWasteReductionAppForRestaurants.Models.Foods;
+﻿namespace FoodWasteReductionAppForRestaurants.Models.Foods;
 
 public class FoodViewModel
 {

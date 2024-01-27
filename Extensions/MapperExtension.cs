@@ -51,7 +51,7 @@ public static class MapperExtension
         {
             Name = model.Name,
             Location = model.Location,
-            Description = model.Description, 
+            Description = model.Description,
             NumberOfPeople = model.NumberOfPeople,
         };
     }
@@ -115,13 +115,13 @@ public static class MapperExtension
 
     #region Donation mappers
     public static List<DonationViewModel> ToMap(
-        this List<Donation> models, 
-        IFoodService foodService, 
-        IShelterService shelterService, 
+        this List<Donation> models,
+        IFoodService foodService,
+        IShelterService shelterService,
         IRestaurantService restaurantService)
         => (List<DonationViewModel>)models.Select(async m => m.ToMapView(
-            await foodService.GetByIdAsync(m.FoodId), 
-            await shelterService.GetByIdAsync(m.ShelterId), 
+            await foodService.GetByIdAsync(m.FoodId),
+            await shelterService.GetByIdAsync(m.ShelterId),
             await restaurantService.GetByIdAsync(m.RestaurantId)));
 
     public static Donation ToMapMain(this DonationCreationModel model)
@@ -147,8 +147,8 @@ public static class MapperExtension
     }
 
     public static DonationViewModel ToMapView(
-        this Donation donationModel, 
-        FoodViewModel foodModel, 
+        this Donation donationModel,
+        FoodViewModel foodModel,
         ShelterViewModel shelterModel,
         RestaurantViewModel restaurantModel)
     {
