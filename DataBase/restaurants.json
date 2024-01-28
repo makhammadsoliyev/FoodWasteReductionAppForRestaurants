@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Lavash",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Chilanzar district",
+        "house_number": null,
+        "neighbourhood": "Beshkorgon neighbourhood",
+        "postcode": "100000",
+        "road": "Bunyudkor Avenue"
+      },
+      "confidence": 9,
+      "formatted": "Oqtepa Lavash, Bunyudkor Avenue, Tashkent, Uzbekistan, 100000",
+      "geometry": {
+        "lat": "41.2423171",
+        "lng": "69.1705221"
+      }
+    },
+    "Id": 1,
+    "CreatedAt": "2024-01-28T08:01:38.3608136Z",
+    "UpdatedAt": "2024-01-28T08:02:29.6317557Z",
+    "DelatedAt": "2024-01-28T08:02:47.8787594Z",
+    "IsDeleted": true
+  },
+  {
+    "Name": "KFC",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Yakkasaray district",
+        "house_number": "174/2",
+        "neighbourhood": "Rakatboshi mahalla",
+        "postcode": "100000",
+        "road": "Babur Street"
+      },
+      "confidence": 9,
+      "formatted": "KFC, Babur Street 174/2, Tashkent, Uzbekistan, 100000",
+      "geometry": {
+        "lat": "41.3039195",
+        "lng": "69.2464911"
+      }
+    },
+    "Id": 2,
+    "CreatedAt": "2024-01-28T08:03:28.7760359Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "RestaurantId": 2,
+    "FoodId": 2,
+    "Quantity": 12.0,
+    "ShelterId": 2,
+    "Id": 1,
+    "CreatedAt": "2024-01-28T08:03:51.9614684Z",
+    "UpdatedAt": "2024-01-28T08:04:10.1734956Z",
+    "DelatedAt": "2024-01-28T08:04:41.6877428Z",
+    "IsDeleted": true
+  },
+  {
+    "RestaurantId": 2,
+    "FoodId": 2,
+    "Quantity": 12.0,
+    "ShelterId": 2,
+    "Id": 2,
+    "CreatedAt": "2024-01-28T08:05:24.6838295Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  },
+  {
+    "RestaurantId": 2,
+    "FoodId": 3,
+    "Quantity": 123.0,
+    "ShelterId": 2,
+    "Id": 3,
+    "CreatedAt": "2024-01-28T08:06:10.8581435Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  }
+]
