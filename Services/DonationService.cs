@@ -33,6 +33,8 @@ public class DonationService : IDonationService
         var donation = model.ToMapMain();
         donation.Id = CollectionExtension.GenerateId(donations);
 
+        donations.Add(donation);
+
         await FileIO.WriteAsync(Constants.DONATIONS_PATH, donations);
 
         return donation.ToMapView(food, shelter, restaurant);
@@ -87,6 +89,7 @@ public class DonationService : IDonationService
         donation.FoodId = model.FoodId;
         donation.Quantity = model.Quantity;
         donation.ShelterId = model.ShelterId;
+        donation.UpdatedAt = DateTime.UtcNow;
         donation.RestaurantId = model.RestaurantId;
 
         await FileIO.WriteAsync(Constants.DONATIONS_PATH, donations);

@@ -1,4 +1,5 @@
-﻿using FoodWasteReductionAppForRestaurants.Models.Foods;
+﻿using FoodWasteReductionAppForRestaurants.Models.Donations;
+using FoodWasteReductionAppForRestaurants.Models.Foods;
 using FoodWasteReductionAppForRestaurants.Models.Restaurants;
 using FoodWasteReductionAppForRestaurants.Models.Shelters;
 using Spectre.Console;
@@ -7,6 +8,29 @@ namespace FoodWasteReductionAppForRestaurants.Display;
 
 public class SelectionMenu
 {
+    public Table DataTable(string title, params DonationViewModel[] donations)
+    {
+        var table = new Table();
+
+        table.Title(title.ToUpper())
+            .BorderColor(Color.Blue)
+            .AsciiBorder();
+
+        table.AddColumn("ID");
+        table.AddColumn("Restaurant");
+        table.AddColumn("Food");
+        table.AddColumn("Quantity");
+        table.AddColumn("Shelter");
+
+        table.Border = TableBorder.Rounded;
+        table.Centered();
+
+        foreach (var donation in donations)
+            table.AddRow(donation.Id.ToString(), donation.Restaurant.Name, donation.Food.Name, donation.Quantity.ToString(), donation.Shelter.Name);
+
+        return table;
+    }
+
     public Table DataTable(string title, params RestaurantViewModel[] restaurants)
     {
         var table = new Table();
@@ -66,13 +90,14 @@ public class SelectionMenu
         table.AddColumn("ID");
         table.AddColumn("Name");
         table.AddColumn("Description");
+        table.AddColumn("Quantity");
 
         table.Border = TableBorder.Rounded;
         table.Width = 100;
         table.Centered();
 
         foreach (var food in foods)
-            table.AddRow(food.Id.ToString(), food.Name, food.Description);
+            table.AddRow(food.Id.ToString(), food.Name, food.Description, food.Quantity.ToString());
 
         return table;
     }

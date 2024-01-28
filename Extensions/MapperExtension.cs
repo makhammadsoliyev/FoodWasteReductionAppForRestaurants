@@ -93,6 +93,7 @@ public static class MapperExtension
         return new Food()
         {
             Name = model.Name,
+            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
@@ -102,6 +103,7 @@ public static class MapperExtension
         return new Food()
         {
             Name = model.Name,
+            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
@@ -112,6 +114,7 @@ public static class MapperExtension
         {
             Id = model.Id,
             Name = model.Name,
+            Quantity = model.Quantity,
             Description = model.Description,
         };
     }
@@ -123,10 +126,20 @@ public static class MapperExtension
         IFoodService foodService,
         IShelterService shelterService,
         IRestaurantService restaurantService)
-        => (List<DonationViewModel>)models.Select(async m => m.ToMapView(
-            await foodService.GetByIdAsync(m.FoodId),
-            await shelterService.GetByIdAsync(m.ShelterId),
-            await restaurantService.GetByIdAsync(m.RestaurantId)));
+    {
+        var result = new List<DonationViewModel>();
+        foreach(var m in models)
+        {
+            var food = foodService.GetByIdAsync(m.FoodId);
+            var shelter = shelterService.GetByIdAsync(m.ShelterId);
+            var restaurant = restaurantService.GetByIdAsync(m.RestaurantId);
+
+            result.Add(m.ToMapView(food.Result, shelter.Result, restaurant.Result));
+        }
+
+        return result;
+    }
+
 
     public static Donation ToMapMain(this DonationCreationModel model)
     {
@@ -159,6 +172,7 @@ public static class MapperExtension
         return new DonationViewModel()
         {
             Food = foodModel,
+            Id = donationModel.Id,
             Shelter = shelterModel,
             Restaurant = restaurantModel,
             Quantity = donationModel.Quantity,

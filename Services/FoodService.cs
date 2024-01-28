@@ -61,6 +61,7 @@ public class FoodService : IFoodService
             ?? throw new Exception($"Food was not found with this id={id}");
 
         food.Name = model.Name;
+        food.Quantity = model.Quantity;
         food.UpdatedAt = DateTime.UtcNow;
         food.Description = model.Description;
 

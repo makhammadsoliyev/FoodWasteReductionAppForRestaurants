@@ -25,7 +25,7 @@ public class MainMenu
 
         foodMenu = new FoodMenu(foodService);
         shelterMenu = new ShelterMenu(shelterService);
-        donationMenu = new DonationMenu();
+        donationMenu = new DonationMenu(donationService);
         restaurantMenu = new RestaurantMenu(restaurantService);
     }
 

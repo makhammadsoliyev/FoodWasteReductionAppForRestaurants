@@ -17,10 +17,17 @@ public class FoodMenu
     {
         string name = AnsiConsole.Ask<string>("[blue]Name: [/]").Trim();
         string description = AnsiConsole.Ask<string>("[cyan1]Description: [/]").Trim();
+        decimal quantity = AnsiConsole.Ask<decimal>("[aqua]Quantity: [/]");
+        while (quantity <= 0)
+        {
+            AnsiConsole.MarkupLine($"[red]Invalid input.[/]");
+            quantity = AnsiConsole.Ask<decimal>("[aqua]Quantity: [/]");
+        }
 
         var food = new FoodCreationModel()
         {
             Name = name,
+            Quantity = quantity,
             Description = description,
         };
 
@@ -63,10 +70,17 @@ public class FoodMenu
         }
         string name = AnsiConsole.Ask<string>("[blue]Name: [/]").Trim();
         string description = AnsiConsole.Ask<string>("[cyan1]Description: [/]").Trim();
+        decimal quantity = AnsiConsole.Ask<decimal>("[aqua]Quantity: [/]");
+        while (quantity <= 0)
+        {
+            AnsiConsole.MarkupLine($"[red]Invalid input.[/]");
+            quantity = AnsiConsole.Ask<decimal>("[aqua]Quantity: [/]");
+        }
 
         var food = new FoodUpdateModel()
         {
             Name = name,
+            Quantity = quantity,
             Description = description,
         };
 
