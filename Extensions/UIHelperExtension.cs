@@ -1,5 +1,4 @@
-﻿using FoodWasteReductionAppForRestaurants.Models.Commons;
-using FoodWasteReductionAppForRestaurants.Models.Foods;
+﻿using FoodWasteReductionAppForRestaurants.Models.Foods;
 using FoodWasteReductionAppForRestaurants.Models.Restaurants;
 using FoodWasteReductionAppForRestaurants.Models.Shelters;
 

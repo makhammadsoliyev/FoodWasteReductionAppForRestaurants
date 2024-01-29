@@ -56,5 +56,63 @@
     "UpdatedAt": "0001-01-01T00:00:00",
     "DelatedAt": "0001-01-01T00:00:00",
     "IsDeleted": false
+  },
+  {
+    "Name": "PDP",
+    "Description": "sds",
+    "Location": {
+      "components": {
+        "building": "PDP Academy",
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Shayhontohur Tumani",
+        "house_number": "3A",
+        "neighbourhood": "Bogkucha (C-27)",
+        "postcode": "100000",
+        "road": "Beruniy Street"
+      },
+      "confidence": 10,
+      "formatted": "PDP Academy, Beruniy Street 3A, Tashkent, Uzbekistan, 100000",
+      "geometry": {
+        "lat": "41.3264882",
+        "lng": "69.2283481"
+      }
+    },
+    "NumberOfPeople": 21345,
+    "Id": 3,
+    "CreatedAt": "2024-01-29T13:32:17.7533224Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  },
+  {
+    "Name": "Bunyodkor",
+    "Description": "sdads",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Shayhontohur Tumani",
+        "house_number": "13",
+        "neighbourhood": null,
+        "postcode": "100011",
+        "road": "Alisher Navoiy Street"
+      },
+      "confidence": 9,
+      "formatted": "Webster University in Tashkent, Alisher Navoiy Street 13, Tashkent, Uzbekistan, 100011",
+      "geometry": {
+        "lat": "41.3201092",
+        "lng": "69.2619583"
+      }
+    },
+    "NumberOfPeople": 2345,
+    "Id": 4,
+    "CreatedAt": "2024-01-29T13:52:15.345726Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
   }
 ]

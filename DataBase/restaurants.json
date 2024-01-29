@@ -52,5 +52,59 @@
     "UpdatedAt": "0001-01-01T00:00:00",
     "DelatedAt": "0001-01-01T00:00:00",
     "IsDeleted": false
+  },
+  {
+    "Name": "Dunyo",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Yakkasaray district",
+        "house_number": null,
+        "neighbourhood": null,
+        "postcode": "100000",
+        "road": "Qushbegi Street"
+      },
+      "confidence": 9,
+      "formatted": "Dunyo Family Restaurant, Qushbegi Street, Tashkent, Uzbekistan, 100000",
+      "geometry": {
+        "lat": "41.2732024",
+        "lng": "69.2456615"
+      }
+    },
+    "Id": 3,
+    "CreatedAt": "2024-01-29T13:33:32.5320312Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
+  },
+  {
+    "Name": "Pkoiza",
+    "Location": {
+      "components": {
+        "building": null,
+        "city": "Tashkent",
+        "country": "Uzbekistan",
+        "country_code": "uz",
+        "county": "Shayhontohur Tumani",
+        "house_number": null,
+        "neighbourhood": "Karatash",
+        "postcode": "100000",
+        "road": "Navoiy Street"
+      },
+      "confidence": 9,
+      "formatted": "Evos, Navoiy Street, Tashkent, Uzbekistan, 100000",
+      "geometry": {
+        "lat": "41.3218788",
+        "lng": "69.237375"
+      }
+    },
+    "Id": 4,
+    "CreatedAt": "2024-01-29T13:53:21.8829436Z",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "DelatedAt": "0001-01-01T00:00:00",
+    "IsDeleted": false
   }
 ]

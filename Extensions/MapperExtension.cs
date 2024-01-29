@@ -128,7 +128,7 @@ public static class MapperExtension
         IRestaurantService restaurantService)
     {
         var result = new List<DonationViewModel>();
-        foreach(var m in models)
+        foreach (var m in models)
         {
             var food = foodService.GetByIdAsync(m.FoodId);
             var shelter = shelterService.GetByIdAsync(m.ShelterId);

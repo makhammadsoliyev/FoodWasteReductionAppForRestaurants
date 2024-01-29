@@ -172,7 +172,7 @@ public class DonationMenu
         {
             AnsiConsole.MarkupLine($"[red]{ex.Message}[/]");
         }
-        key:
+    key:
         await Task.Delay(2000);
     }
 
