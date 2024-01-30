@@ -5,7 +5,7 @@ namespace FoodWasteReductionAppForRestaurants.Helpers;
 public static class FileIO
 {
     public static async Task<List<T>> ReadAsync<T>(string path)
-    {
+    { 
         var content = await File.ReadAllTextAsync(path);
 
         return JsonConvert.DeserializeObject<List<T>>(content) ?? new List<T>();
